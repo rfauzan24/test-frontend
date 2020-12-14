@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Frontend</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="test.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<img class="background" src="assets/bg.png">
+    <div class="header">
+        <img class="test" src="assets/TEST.png">
+    	<img class="frontend" src="assets/FRONTend.png">
+    </div>
+
+    <div class="content">
+    	<div class="content-inner">
+	    	<h1>Start Your Journey</h1>
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    	consequat.</p>
+    	</div>
+	    <div class="card">
+		  	<img class="properti" src="assets/map.png" style="width:100%">
+		  	<div class="tag">
+		  		<span class="dijual">Dijual</span>
+		  		<span class="nego">Nego</span>
+		  		<span style="margin-top: 5px; margin-left: 48%;">
+		  			<img src="assets/icon/love.svg">
+		  		</span>
+		  	</div>
+		  	<div class="container">
+	    		<h4><b>Rp. 326 jt</b></h4> <p class="cicilan">Cicilan Rp. 2.61jt/bln</p> 
+		  	</div>
+		  	<div class="fitur">
+	  			<img src="assets/icon/Kamar Tidur.svg">
+	  			<p style="margin-left: 5px;">2 K.Tidur</p>
+	  			<img style="margin-left: 10px;" src="assets/icon/Kamar mandi.svg">
+	  			<p style="margin-left: 5px;">2 K.Mandi</p>
+	  			<img style="margin-left: 10px;" src="assets/icon/Luas Bangunan.svg">
+	  			<p style="margin-left: 5px;">65m2</p>
+	  			<img style="margin-left: 10px;" src="assets/icon/Luas Tanah.svg">
+	  			<p style="margin-left: 5px;">65m2</p>
+		  	</div>
+		  	<button id="myBtn" class="detail">Lihat Detail</button>
+		</div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+	<div class="modal-content">
+		<div class="card-2">
+		  	<img class="properti" src="assets/map.png" style="width:100%">
+		  	<div class="container=2">
+	    		<h4><b>Jl. Sukajadi No. 1 Bandung, Jawa Barat</b></h4> 
+	    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    		consequat.</p> 
+		  	</div>
+		  	<button class="close">Tutup</button>
+		</div>
+	</div>
+
+</div>
+
+<!-- aplikasi Vue Hello -->
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            message: "Hello World!"
+        }
+    })
+    var modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+
+</script>
+</body>
+</html>

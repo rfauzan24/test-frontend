@@ -1,0 +1,162 @@
+@font-face {
+    font-family: customFont;
+    src: url(AvenirNext-Regular.woff);
+}
+
+body {
+	background: rgb(96,73,226);
+	/*background: linear-gradient(180deg, rgba(96,73,226,1) 0%, rgba(122,60,219,1) 100%);*/
+	overflow: hidden;
+}
+
+div{
+	font-family: customFont;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 60px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	border-radius: 10px;
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 45%;
+	height: 80%;
+	border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+	width: 100%; 
+	margin-top: 20px;
+	background-color: #4CB97F;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.background{
+	width: 60%;
+    height: auto;
+    margin-top: 9%;
+    margin-left: -10px;
+    position: absolute;
+}
+
+.header{
+	margin-left: 2%;
+    margin-top: 5%;
+}
+
+.frontend{
+	float: right;
+	margin-right: 2%;
+}
+
+.content-inner{
+    float: left;
+    width: 45%;
+    margin-left: 10%;
+    margin-top: 13%;
+    color: #fff;
+    position: relative;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    border-radius: 5px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: #fff;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.properti {
+	border-radius: 5px 5px 0 0;
+}
+
+.tag{
+	padding: 2px;
+	display: flex;
+}
+
+.dijual{
+	color: #000;
+	background-color: #E9EEF2;
+	padding: 2px 14px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.nego{
+	margin-left: 10px;
+	background-color: #4CB97F;
+	padding: 2px 14px;
+	border-radius: 20px;
+	color: white;
+	margin-top: 5px;
+}
+
+.container {
+	padding: 2px;
+	display: flex;
+}
+
+.cicilan{
+	margin-top: 22px;
+    margin-left: 10px;
+}
+
+.detail{
+	width: 100%; 
+	margin-bottom: 10px;
+	background-color: #4CB97F;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.fitur{
+	display: flex;
+	margin-top: -25px;
+}
